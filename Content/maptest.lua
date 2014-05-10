@@ -20,7 +20,32 @@ return {
       imageheight = 180,
       transparentcolor = "#ff00ff",
       properties = {},
-      tiles = {}
+      tiles = {
+        {
+          id = 0,
+          properties = {
+            ["solid"] = "true"
+          }
+        },
+        {
+          id = 4,
+          properties = {
+            ["solid"] = "true"
+          }
+        },
+        {
+          id = 6,
+          properties = {
+            ["solid"] = "true"
+          }
+        },
+        {
+          id = 12,
+          properties = {
+            ["solid"] = "true"
+          }
+        }
+      }
     }
   },
   layers = {
