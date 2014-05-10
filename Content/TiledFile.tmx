@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="15" height="10" tilewidth="60" tileheight="60">
+ <tileset firstgid="1" name="tileset2" tilewidth="60" tileheight="60">
+  <image source="tiles.png" trans="ff00ff" width="360" height="180"/>
+  <tile id="0">
+   <properties>
+    <property name="solid" value="true"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="solid" value="true"/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="solid" value="true"/>
+   </properties>
+  </tile>
+  <tile id="12">
+   <properties>
+    <property name="solid" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="19" name="Character" tilewidth="40" tileheight="50">
+  <image source="Brain.png" trans="ff00ff" width="200" height="100"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="15" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjZmBgYCYBMyFhUvTB9LIQ0MtIBEZXT4ob8KknZBY2+9H14nMnsRhdHxMZmJFIvYTcwgvFIDY7kjg7DjkYHwC5GwGM
+  </data>
+ </layer>
+ <objectgroup name="Object Layer 1" width="15" height="10">
+  <object name="MoveBlock" gid="5" x="280" y="361">
+   <properties>
+    <property name="solid" value="true"/>
+   </properties>
+  </object>
+  <object name="Brain" gid="19" x="19" y="531">
+   <properties>
+    <property name="_the" value="Brain"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Object Layer 2" width="15" height="10" visible="0"/>
+</map>
