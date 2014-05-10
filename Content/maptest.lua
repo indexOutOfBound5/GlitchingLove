@@ -46,6 +46,20 @@ return {
           }
         }
       }
+    },
+    {
+      name = "Character",
+      firstgid = 19,
+      tilewidth = 40,
+      tileheight = 50,
+      spacing = 0,
+      margin = 0,
+      image = "Brain.png",
+      imagewidth = 200,
+      imageheight = 100,
+      transparentcolor = "#ff00ff",
+      properties = {},
+      tiles = {}
     }
   },
   layers = {
@@ -72,6 +86,51 @@ return {
         2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1,
         1, 13, 13, 1, 7, 1, 1, 7, 13, 13, 1, 7, 1, 13, 1
       }
+    },
+    {
+      type = "objectgroup",
+      name = "Object Layer 1",
+      visible = true,
+      opacity = 1,
+      properties = {},
+      objects = {
+        {
+          name = "MoveBlock",
+          type = "",
+          shape = "rectangle",
+          x = 280,
+          y = 361,
+          width = 0,
+          height = 0,
+          gid = 5,
+          visible = true,
+          properties = {
+            ["solid"] = "true"
+          }
+        },
+        {
+          name = "Brain",
+          type = "",
+          shape = "rectangle",
+          x = 19,
+          y = 531,
+          width = 0,
+          height = 0,
+          gid = 19,
+          visible = true,
+          properties = {
+            ["_the"] = "Brain"
+          }
+        }
+      }
+    },
+    {
+      type = "objectgroup",
+      name = "Object Layer 2",
+      visible = false,
+      opacity = 1,
+      properties = {},
+      objects = {}
     }
   }
 }
