@@ -1,12 +1,15 @@
 STRICT = true
 DEBUG = true
 require 'zoetrope'
+require 'Content/maptest'
+require 'MapTest'
 jumpValue = -100
 jumpHeight = 30
 stillJumping = 0
 the.app = App:new
 {
     onRun = function (self)
+        self.view = MapTest:new()
         self.player = Tile:new
         {
             x = 0, y = 0,
