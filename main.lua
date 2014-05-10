@@ -7,11 +7,11 @@ stillJumping = 0
 the.app = App:new
 {
     onRun = function (self)
-        self.player = Fill:new
+        self.player = Tile:new
         {
             x = 0, y = 0,
             width = 32, height = 48,
-            fill = {0, 0, 255},
+            image = 'Content/Brain.png',
             acceleration = { y = 600 },
             onUpdate = function (self, elapsed)
                 if the.keys:pressed('left') then
