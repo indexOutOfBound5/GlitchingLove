@@ -49,8 +49,14 @@ the.app = App:new
     end
 }
 function onJump(self)
+	sound = love.audio.newSource('Sound/Love_Jumping.wav')
+
 	if stillJumping <= jumpHeight then
 		self.velocity.y = jumpValue
 		stillJumping = stillJumping + 1
+	end
+	
+	if stillJumping == 1 and stillJumping <= 1.1 then
+		love.audio.play(sound)
 	end
 end
