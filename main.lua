@@ -6,16 +6,20 @@ require 'MapTest'
 jumpValue = -100
 jumpHeight = 30
 stillJumping = 0
+frames1 = {1, 2, 3, 4}
+sequence1 = { name = "lol", frames = frames1, fps = 1, loops = true}
 the.app = App:new
 {
     onRun = function (self)
         self.view = MapTest:new()
-        self.player = Tile:new
+        self.player = Animation:new
         {
             x = 0, y = 0,
-            width = 32, height = 48,
+            width = 40, height = 50,
             image = 'Content/Brain.png',
             acceleration = { y = 600 },
+            sequences = sequence1,
+            currentFrame = 4,
             onUpdate = function (self, elapsed)
                 if the.keys:pressed('left') then
                     self.velocity.x = -100
@@ -29,12 +33,13 @@ the.app = App:new
             end
         }
         self:add(self.player)
+        self.player:play()
 
         self.platform = Fill:new
         {
-            x = 0, y = 400,
-            width = 128, height = 32,
-            fill = {255, 255, 255},
+            x = 0, y = 360,
+            width = 720, height = 60,
+	    border={256, 255, 0},
             onCollide = function (self, other, xOverlap, yOverlap)
                 stillJumping = 0;
                 self:displace(other)

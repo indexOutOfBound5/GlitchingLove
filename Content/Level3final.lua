@@ -26,7 +26,7 @@ return {
   layers = {
     {
       type = "tilelayer",
-      name = "Tile Layer 1",
+      name = "map",
       x = 0,
       y = 0,
       width = 15,
