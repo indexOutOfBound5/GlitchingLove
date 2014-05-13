@@ -9,7 +9,7 @@ return {
   properties = {},
   tilesets = {
     {
-      name = "tileset2",
+      name = "Tiles",
       firstgid = 1,
       tilewidth = 60,
       tileheight = 60,
@@ -22,27 +22,15 @@ return {
       properties = {},
       tiles = {
         {
-          id = 0,
+          id = 1,
           properties = {
-            ["solid"] = "true"
+            ["solid"] = "false"
           }
         },
         {
-          id = 4,
+          id = 2,
           properties = {
-            ["solid"] = "true"
-          }
-        },
-        {
-          id = 6,
-          properties = {
-            ["solid"] = "true"
-          }
-        },
-        {
-          id = 12,
-          properties = {
-            ["solid"] = "true"
+            ["solid"] = "false"
           }
         }
       }
@@ -72,14 +60,6 @@ return {
         2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1,
         1, 13, 13, 1, 7, 1, 1, 7, 13, 13, 1, 7, 1, 13, 1
       }
-    },
-    {
-      type = "objectgroup",
-      name = "",
-      visible = false,
-      opacity = 1,
-      properties = {},
-      objects = {}
     }
   }
 }
